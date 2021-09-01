@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with = device-width, initial-scale = 1.0">
+            <title>All Product-E-commerce Sample</title>
+            <link rel="stylesheet" href="style.css">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,700;1,300&display=swap" rel="stylesheet">
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <section class="product-header">
+            <div class="head-container">
+                <nav>
+                    <img src="images/logo-new.png">
+                    <div class="nav-links" id="navLinks"> 
+                        <i class="fa fa-times" onclick="hideMenu()"></i>                   
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="product.html">Product</a></li>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Contacts</a></li>
+                            <li><a href="account.html">Account</a></li>                             
+                        </ul>                                                     
+                    </div>
+                    <a href="cart.html"><img src="images/cart.png" class="cart"></a>
+                    <i class="fa fa-bars" onclick="showMenu()"></i>
+
+                </nav>
+             </div>
+        </section>
+<!---------------------------single product detail--------------------------->
+<section class="product">
+    <div class="small-container single-product">
+        <div class="item-row">
+            <div class="SP-col">
+               <img src="images/gallery-1.jpg" id="productImg">
+              
+               <div class="small-img-row">
+                    <div class="small-img-col">
+                        <img src="images/gallery-1.jpg" class="smallImg">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/gallery-2.jpg"class="smallImg">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/gallery-3.jpg" class="smallImg">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/gallery-4.jpg" class="smallImg">
+                    </div>
+               </div>
+            </div>
+            <div class="SP-col">
+                <p>Home/T-shirt</p>
+                <h1>Red Printed T-shirt by HRX</h1>
+                <h4>$50.00</h4>
+                <select name="'" id="">
+                    <option value="">Select Size</option>
+                    <option value="">XXL</option>
+                    <option value="">XL</option>
+                    <option value="">Large</option>
+                    <option value="">Medium</option>
+                    <option value="">Small</option>
+                </select>
+                <input type="number" value="1">
+                <a href="" class="btn">Add To Cart</a>
+                <h3>Product Details <i class="fa fa-indent"></i></h3>
+                <p id="info">Give your summer wardrobe a style upgrade with the HRX
+                   Men's Active T-shirt. Team it with a pair of shorts for 
+                   your morning workout or a denims for an evening out with 
+                   the guys.
+                </p>
+            </div>
+        </div>
+    </div>
+    </section>
+<!---------------------Related Product -------------------------->
+        
+        
+    <section class="Related Product">
+
+        <div class="small-container">
+            <div class="rp-row">
+                <div class="rp-col">
+                    <h2>Related Products</h2>
+                </div>
+                <div class="rp-col">
+                   <a href="product.html"><p>View More</p></a>
+                </div>
+            </div>
+
+        </div>
+        <div class="small-container">
+        <div class="item-row">
+            <div class="P-col">
+               <img src="images/product-3.jpg">
+               <h4>Grey Sport pant</h4>
+               <div class="rating">
+                   <i class="fa fa-star"></i>
+                   <i class="fa fa-star"></i>
+                   <i class="fa fa-star"></i>
+                   <i class="fa fa-star"></i>
+                   <i class="fa fa-star-half-o"></i>
+               </div>
+               <p>$30.00</p>
+            </div>
+                <div class="P-col">
+                 <img src="images/product-4.jpg">
+                    <h4>Violet Printed T-shirt</h4>
+                        <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                </div>
+                    <p>$50.00</p>
+                </div>        
+                <div class="P-col">
+                   <img src="images/product-6.jpg">
+                   <h4>Black Puma T-shirt</h4>
+                   <div class="rating">
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star-half-o"></i>
+                       <i class="fa fa-star-o"></i>
+                   </div>
+                   <p>$80.00</p>
+                </div>
+                              
+               <div class="P-col">
+                  <img src="images/product-12.jpg">
+                  <h4>Black Sport Pant</h4>
+                  <div class="rating">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star-half-o"></i>
+                      <i class="fa fa-star-o"></i>
+                  </div>
+                  <p>$30.00</p>
+               </div>
+               <a href="product.html"id="view-more" >View More</a>
+        </div> 
+        </div>
+     
+    </section>
+<!----------------- Footer --------------------->
+    <section class="footer">
+        <div class="container">
+            <div class="item-row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and IOS mobile phone</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png">
+                        <img src="images/app-store.png">
+
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                   <img src="images/logo-new.png">
+                    <p>Our Purpose Is To Sustainably Make The Pleasure And Benefits Of Sports Accessible To The Many. </p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Link</h3>
+                    <ul>
+                        <li><a href="">Coupons</a></li>
+                        <li><a href="">Blog Post</a></li>
+                        <li><a href="">Return Policy</a></li>
+                        <li><a href="">Join Affiliate</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li><a href="">Facebook</a></li>
+                        <li><a href="">Instagram</a></li>
+                        <li><a href="">Twitter</a></li>
+                        <li><a href="">YouTube</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr> 
+            <p class="copyright">Copyright 2021 - Easy Tutorials</p>
+        </div>
+    </section>
+     
+    <!--------Menu Toggle -------->
+    <script>
+            var navLinks = document.getElementById('navLinks')
+            function showMenu(){
+                navLinks.style.right ='0'
+            }
+
+            function hideMenu(){
+                navLinks.style.right ='-50%'
+            }
+    </script>
+    <!-------------------detail image change------------------->
+    <script>
+         var pImg = document.getElementById('productImg')
+         var sImg = document.getElementsByClassName('smallImg')
+
+         sImg[0].onclick = function(){
+             pImg.src = sImg[0].src
+         }
+         sImg[1].onclick = function(){
+             pImg.src = sImg[1].src
+         }
+         sImg[2].onclick = function(){
+             pImg.src = sImg[2].src
+         }
+         sImg[3].onclick = function(){
+             pImg.src = sImg[3].src
+         }
+    </script>
+    </body>
+</html>

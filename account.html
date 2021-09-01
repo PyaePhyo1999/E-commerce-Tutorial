@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with = device-width, initial-scale = 1.0">
+            <title>All Product-E-commerce Sample</title>
+            <link rel="stylesheet" href="style.css">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,700;1,300&display=swap" rel="stylesheet">
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <section class="product-header">
+            <div class="head-container">
+                <nav>
+                    <img src="images/logo-new.png">
+                    <div class="nav-links" id="navLinks"> 
+                        <i class="fa fa-times" onclick="hideMenu()"></i>                   
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="product.html">Product</a></li>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Contacts</a></li>
+                            <li><a href="account.html">Account</a></li>                                 
+                        </ul>                                                     
+                    </div>
+                    <a href="cart.html"><img src="images/cart.png" class="cart"></a>
+                    <i class="fa fa-bars" onclick="showMenu()"></i>
+
+                </nav>
+             </div>
+        </section>
+    
+<!---------------------Account Section  -------------------------->
+<div class="account">
+    <div class="container">
+        <div class="item-row">
+            <div class="acc-col">
+               <img src="images/image1.png">
+            </div>
+            <div class="form-container">
+                <div class="form-btn">
+                    <span onclick="login()">Login</span>
+                    <span onclick="register()">Register</span>
+                    <hr id="indicator">
+                </div>
+                <form id="login">
+                    <input type="text" placeholder="Username">
+                    <input type="password" placeholder="Password">
+                    <button type="submit" class="btn">Login</button>
+                    <a href="">Forget Password</a>
+                </form>
+
+                <form id="register">
+                    <input type="text" placeholder="Username">
+                    <input type="email" placeholder="Email">
+                    <input type="password" placeholder="Password">
+                    <button type="submit" class="btn">Register</button>
+                    
+                </form>
+ 
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+    
+<!----------------- Footer --------------------->
+<div class="footer">
+    <div class="container">
+        <div class="item-row">
+            <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p>Download App for Android and IOS mobile phone</p>
+                <div class="app-logo">
+                    <img src="images/play-store.png">
+                    <img src="images/app-store.png">
+
+                </div>
+            </div>
+            <div class="footer-col-2">
+               <img src="images/logo-new.png">
+                <p>Our Purpose Is To Sustainably Make The Pleasure And Benefits Of Sports Accessible To The Many. </p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Link</h3>
+                <ul>
+                    <li><a href="">Coupons</a></li>
+                    <li><a href="">Blog Post</a></li>
+                    <li><a href="">Return Policy</a></li>
+                    <li><a href="">Join Affiliate</a></li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="">Facebook</a></li>
+                    <li><a href="">Instagram</a></li>
+                    <li><a href="">Twitter</a></li>
+                    <li><a href="">YouTube</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr> 
+        <p class="copyright">Copyright 2021 - Easy Tutorials</p>
+    </div>
+</div>
+
+
+    <!--------Menu Toggle -------->
+    <script>
+            var navLinks = document.getElementById('navLinks')
+            function showMenu(){
+                navLinks.style.right ='0'
+            }
+
+            function hideMenu(){
+                navLinks.style.right ='-50%'
+            }
+    </script>
+    <!-----form-action-------->
+    <script>
+         var loginForm = document.getElementById("login")
+         var registerForm = document.getElementById("register")
+         var indi = document.getElementById("indicator")
+
+         function register(){
+              registerForm.style.transform = "translateX(-300px)"
+              loginForm.style.transform = "translateX(-300px)"
+              indi.style.transform = "translateX(100px)"
+         }
+         function login(){
+              registerForm.style.transform = "translateX(0)"
+              loginForm.style.transform = "translateX(0)"
+              indi.style.transform = "translateX(0)"
+         }
+    </script>
+
+    </body>
+</html>
